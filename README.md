@@ -1,3 +1,17 @@
+# Bright Bakery
+This project is based off the react app built during the BNTA lecture on components, props and states.
+
+What I learnt:
+- How to create a react App
+- How to use JSX
+- How to create and import react components
+- How to use and pass on props 
+- Using states
+
+<!-- ---
+# === Ignore anything below - it is all part of the React BoilerPlate Readme ====
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -67,4 +81,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->
