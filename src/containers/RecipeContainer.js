@@ -1,4 +1,5 @@
 import React from 'react';
+import Recipe from '../components/Recipe'
 
 const RecipeContainer = () => {
     
@@ -27,14 +28,8 @@ const RecipeContainer = () => {
 
     const cakeList = cakes.map((cake) => {
         return (
-            <div>
-                <h3>{cake.cakeName}</h3>
-                <ul>
-                    Ingredients: {cake.ingredients.map(ingredient => <li>{ingredient}</li>)}
-                </ul>
-                <h6>Rating: {cake.rating}</h6>
-                
-            </div>
+            <Recipe cake={cake}
+                    key={cake.cakeName}/>
         )
     })
            
