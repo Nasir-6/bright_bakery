@@ -1,6 +1,6 @@
 import {useState} from 'react'
 
-const RecipeForm = () => {
+const RecipeForm = ({handleCakeSubmit}) => {
 
     // Set all states to empty at start
     const [cakeName, setCakeName] = useState("");
@@ -27,6 +27,13 @@ const RecipeForm = () => {
         if(!cakeName || !ingredients || !rating){
             return
         }
+
+        // Now update the cake with new cake from input!!
+        handleCakeSubmit({
+            cakeName: cakeName,
+            ingredients: [ingredients],
+            rating: rating
+        })
 
 
 

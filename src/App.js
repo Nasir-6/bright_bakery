@@ -8,7 +8,8 @@ import RecipeContainer from './containers/RecipeContainer';
 
 function App() {
 
-  const cakes = [
+  const [cakes, setCakes] = useState(
+    [
     {
       cakeName: "Lemon Drizzle",
       ingredients: [
@@ -49,14 +50,21 @@ function App() {
       ],
       rating: 5,
     },
-  ];
+  ]
+  );
+
+  // create an update cake state hook to be passed down as a prop to form!! 
+  const addCake = (submittedCake) => {
+    const updatedCakes = [...cakes, submittedCake];
+    setCakes(updatedCakes);
+  }
 
   return (
     <>
       <Title />
       <Search />
       <NavBar />
-      <RecipeForm />
+      <RecipeForm handleCakeSubmit={(cake) => addCake(cake)}/>
       <RecipeContainer cakes={cakes} />
     </>
   );
